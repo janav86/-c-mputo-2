@@ -3,7 +3,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-html{
+html{ /*Se define la respuesta o comportamiento de navegacion en la pagina*/
     scroll-behavior: smooth;
 }
 
@@ -17,19 +17,19 @@ html{
     top: 0;
 
 }
-
+/*Nuestro encabezado o barra de navegacion y las secciones*/
 .navbar ul{
     display: flex;
     list-style: none;
     margin: 20px 0px;
 }
-
+/*Formato especifico o letra para nuestra barra de navegacion*/
 .navbar ul li{
     font-family: century;
     font-size: 1.2rem;
     font-weight: bold;
 }
-
+/*A la hora de navegar entre las secciones darle un enfoque mas responsivo*/
 .navbar ul li a{
     text-decoration: none;
     color: white;
@@ -44,7 +44,7 @@ html{
     color: black;
     box-shadow: 0 0 10px white;
 }
-/*Carlos Lopez*/
+/*Nuestro titulo de inicio, proporciones*/
 #inicio{
     display: flex;
     flex-direction: column;
@@ -54,6 +54,7 @@ html{
     align-items: flex-end;
     color: white;
 }
+/*Definimos nuestro fondo de pantalla de INICIO*/
 #inicio ::before{
     content: "";
     position: absolute;
@@ -66,31 +67,30 @@ html{
     opacity: .6;
 
 }
+
+/*Donde va estar posicionado nuestro titulo y elementos de INICIO*/
 .main{
     display: flex;
     flex-direction: column;
-/*border: 1px solid white;
-*/
     align-items: center;
     position: center;
-    /*top: 30%;
-    right: 10%;*/
-}
 
+}
+/*Se define nuestro titulo "Renta tu primer ....."*/
 .textoprincipal{
     font-family: century;
     font-size: 3.5rem;
     text-align: center;
     margin: 0.7px 50px;
 }   
-
+/*Se define nuestro Slogan "porque tu tienes  ....."*/
 .slogan{
     font-family: century;
     font-size: 1.2rem;
     text-align: center;
     margin: 10px 0px;
 }
-
+/*Se define las propiedades que tendran nuestras Secciones(no en la barra de navegacion)*/
 .headings{
     font-family: century;
     font-size: 3rem;
@@ -98,7 +98,7 @@ html{
     margin: 40px 0px;
 }
 
-
+/*Se define nuestro boton Comienza Ya*/
 .btn{
     padding: 10px 35px;
     background-color: transparent;
@@ -107,6 +107,7 @@ html{
     outline: none;
     transition: .6 ease;
 }
+/*El diseno a la hora se seleccionar el boton*/
 .btn:hover{
    cursor: pointer;
    background-color: red;
@@ -116,7 +117,7 @@ html{
 
 }
 
-/*Acerca de */
+/*Se define nuestra seccion QUIENES SOMOS*/
 #qsomos{
     display: flex;
     flex-direction: column;
@@ -124,14 +125,17 @@ html{
     padding:20px;
     margin-bottom: 50px;
 }
+/*Nuestra imagen o Logo*/
 #pic{
     display: flex;
 }
+/*Proporciones de nuestro logo*/
 #pic img{
     width: 575px;
     height: 400px;
 }
 
+/*De nuestra seccion quienes somos definimos donde va ir nuestro texto o mensaje de que somos*/
 #intro{
    display: flex;
    flex-direction: column;
@@ -139,12 +143,13 @@ html{
    padding: 10px; 
    
 }
+/*Nuestro texto de quienes somos , formato usado*/
 #intro h2{
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/*Portafolio*/
+/*Se define la seccion NUESTROS AUTOS*/
 #servicio{
     display:flex;
     flex-direction: column;
@@ -153,7 +158,7 @@ html{
     align-items: center;
     padding: 20px;
 }
-/*Se le da formato al tipo de imagen*/
+/*Se le da diseno a nuestra galeria de autos*/
 .galeria{
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +171,7 @@ html{
     height: 350px;
     margin: 10px;
 }
-/*Conctacto*/
+/*Se disena la seccion CONTACTO*/
 #contacto{
     display: flex;
     flex-direction: column;
@@ -176,7 +181,7 @@ html{
     padding: 20px;
 }
 
-/*Se define el tamano, espacio del apartado Contacto*/
+/*Se define el tamano, espacio de Contacto*/
 .form{
     display: flex;
     flex-direction: column;
@@ -201,7 +206,8 @@ margin: 15px;
 border: none;
 outline: none;    
 }
-/*Se define el boton, asi como sus proporciones */
+
+/*Se disena y da formato al boton ENVIAR, asi como sus proporciones */
 #enviar{
     padding: 10px;
     width: 10%;
@@ -209,7 +215,7 @@ outline: none;
     border: none;
     outline: none;
 }
-/*Se le da formato al boton enviar*/
+/*Se le da formato al boton ENVIAR*/
 
 #enviar:hover{
     cursor: pointer;
